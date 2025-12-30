@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Semantic Website</title>
+    <style>
+        :root {
+            --primary: #2c5282;
+            --light: #f7fafc;
+            --dark: #1a202c;
+            --gray: #718096;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem 5%;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background-color: var(--dark);
+            padding: 1rem 5%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #a0aec0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 2.5rem;
+        }
+
+        section,
+        article {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 3rem 5%;
+            margin-top: 3rem;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>A modern example using semantic HTML5 elements</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Main Content Area</h2>
+            <p>This is the primary content of the page wrapped in a <code>&lt;main&gt;</code> element.</p>
+
+            <article>
+                <h3>Featured Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+            </article>
+
+            <article>
+                <h3>Another Interesting Post</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Sidebar</h3>
+            <ul>
+                <li><strong>Categories</strong></li>
+                <li>→ Web Development</li>
+                <li>→ Design</li>
+                <li>→ Tutorials</li>
+                <li>→ News</li>
+            </ul>
+
+            <h4>Recent Posts</h4>
+            <ul>
+                <li>HTML5 Semantics in 2025</li>
+                <li>CSS Grid vs Flexbox</li>
+                <li>Modern Web Typography</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Semantic Website • Built with <span class="highlight">HTML5 semantic elements</span></p>
+        <p>All rights reserved • <a href="#" style="color: #a0aec0;">Privacy Policy</a> • <a href="#"
+                style="color: #a0aec0;">Terms of Use</a></p>
+    </footer>
+
+</body>
+
+</html>

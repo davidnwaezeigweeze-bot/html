@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cascading Effects - Demonstration</title>
+
+    <style>
+        /* 1. Specificity - ID beats Class beats Element */
+        #special-text {
+            color: purple;
+            font-size: 28px;
+        }
+
+        .important {
+            color: red !important;
+            /* ← !important wins almost everything */
+            font-weight: bold;
+        }
+
+        p {
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* 2. Order / Source Order (last rule wins when specificity is equal) */
+        .last-wins {
+            color: orange;
+            color: green;
+            /* ← this one wins because it comes later */
+        }
+
+        /* 3. !important (highest priority - overrides everything except... more !important later) */
+        .overpower {
+            color: gray !important;
+        }
+
+        /* 4. Inline style (highest specificity after !important) */
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Cascading Demonstration</h1>
+
+    <!-- 1. Specificity example -->
+    <p>This paragraph should be <strong>blue</strong> (element selector)</p>
+
+    <p class="important">This should be <strong>RED + bold</strong> (class + !important)</p>
+
+    <p id="special-text">This should be <strong>PURPLE 28px</strong> (ID wins over class & element)</p>
+
+    <!-- 2. Source order (last declaration wins) -->
+    <div class="last-wins">This text should be <strong>GREEN</strong></div>
+
+    <!-- 3. !important vs everything else -->
+    <div class="overpower" id="special-text" style="color: hotpink;">
+        This text is <strong>GRAY</strong> because of !important<br>
+        (even inline style and ID lose to !important)
+    </div>
+
+    <!-- 4. Inline style (highest specificity except !important) -->
+    <p style="color: darkorange; font-size: 24px;">
+        This paragraph uses <strong>INLINE STYLE</strong> → orange 24px
+    </p>
+
+</body>
+
+</html>

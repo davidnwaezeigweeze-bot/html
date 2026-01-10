@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>CSS Text Decoration & Styling Activity 🎨</title>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #f9f9f9;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .example {
+    background: white;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-left: 5px solid #3498db;
+  }
+
+  .example h2 {
+    margin-top: 0;
+    color: #2980b9;
+    font-size: 1.4em;
+  }
+
+  /* Text decoration examples */
+  .underline       { text-decoration: underline; }
+  .overline        { text-decoration: overline; }
+  .line-through    { text-decoration: line-through; }
+  .fancy-underline { text-decoration: underline wavy red 3px; }
+  .multi-decor     { text-decoration: underline overline dashed purple 4px; }
+
+  /* Text transform examples */
+  .uppercase { text-transform: uppercase; }
+  .lowercase { text-transform: lowercase; }
+  .capitalize { text-transform: capitalize; }
+
+  /* Spacing & shadow */
+  .letter-space  { letter-spacing: 4px; font-size: 1.3em; }
+  .word-space    { word-spacing: 15px; }
+  .text-shadow   { text-shadow: 3px 3px 0 #e74c3c, 6px 6px 0 #f1c40f; font-weight: bold; font-size: 2em; }
+
+  /* Combined fancy example */
+  .super-fancy {
+    text-decoration: underline overline wavy teal 5px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    font-weight: bold;
+    color: #8e44ad;
+  }
+</style>
+</head>
+<body>
+
+<h1>✨ CSS Text Styling & Decoration Activity ✨</h1>
+
+<div class="example">
+  <h2>1. text-decoration (add lines)</h2>
+  <p class="underline">This text has a simple underline</p>
+  <p class="overline">This text has an overline</p>
+  <p class="line-through">This text is struck through (deleted)</p>
+  <p class="fancy-underline">Fancy wavy red underline!</p>
+  <p class="multi-decor">Multiple decorations: dashed purple underline + overline</p>
+</div>
+
+<div class="example">
+  <h2>2. text-transform (change case)</h2>
+  <p class="uppercase">this will become all capital letters</p>
+  <p class="lowercase">THIS WILL BECOME ALL SMALL LETTERS</p>
+  <p class="capitalize">every word will start with capital letter</p>
+</div>
+
+<div class="example">
+  <h2>3. Spacing properties</h2>
+  <p class="letter-space">This has extra space between letters</p>
+  <p class="word-space">This   has   much   more   space   between   words</p>
+</div>
+
+<div class="example">
+  <h2>4. text-shadow (glowing / shadow effect)</h2>
+  <p class="text-shadow">Colorful Text Shadow Effect!</p>
+</div>
+
+<div class="example">
+  <h2>5. Combine everything for super fancy text!</h2>
+  <p class="super-fancy">this is a very decorative paragraph</p>
+</div>
+
+<p style="text-align:center; margin-top:50px; color:#7f8c8d;">
+  Experiment! Change values, add colors, try different styles → have fun decorating! 🚀
+</p>
+
+</body>
+</html>
